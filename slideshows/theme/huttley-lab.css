@@ -6,7 +6,7 @@ section {  /* Each slide is a section class */
   background-color: #ffffff;
   font-size: 2em;
   padding: 1rem; /* Optional: Add padding for better spacing */
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family:'Segoe UI';
 }
 
 .bottom_align_contents {
