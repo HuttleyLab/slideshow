@@ -5,16 +5,37 @@ title: Some title
 math: katex
 size: 16:9
 headingDivider: 1
-theme: huttley-lab  
+theme: Default  
 ---
 ## Cover slide
 <!-- paginate: skip -->
-<!-- _class: coverpage -->
+<style>
+  section::after 
+    {
+      content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
+    }
+  section 
+  {  /* Each slide is a section class */
+    background-color: #ffffff;
+    font-size: 2em;
+    padding: 1rem; /* Optional: Add padding for better spacing */
+    font-family:'Segoe UI';
+  }
+</style>
 
 ![](images/debruijngraph.drawio.svg)
 - Student: First Last
 - Huttley lab, Australian National University
 - Supervisors: Gavin Huttley 
+
+<style scoped>
+  {
+background-image: url('./images/ANU_logo.png');
+background-repeat: no-repeat;
+background-size: 30%;
+background-position: right 10px bottom 10px;
+}
+</style>
 
 # First slide
 <!-- paginate: true -->
@@ -115,6 +136,13 @@ $$
 
 # 2 column layout
 
+<style>
+  .two_columns {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 1rem;
+}
+</style>
 <div class="two_columns">
   <div>
 

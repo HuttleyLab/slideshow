@@ -1,6 +1,6 @@
 {
     "markdown.marp.themes": [
-        "./slideshows/theme/huttley-lab.css"
+        "./slideshow/theme/huttley-lab.css"
     ],
     "markdown.marp.html": "all",
     "markdown.preview.fontSize": 14,
