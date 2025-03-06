@@ -1,6 +1,6 @@
 /* @theme huttley-lab */
 
-@import 'gaia';
+@import 'Gaia';
 
 section {  /* Each slide is a section class */
   background-color: #ffffff;
@@ -13,46 +13,29 @@ section {  /* Each slide is a section class */
 display:flex; 
 align-items:flex-end
 }
+
 .two_columns {
 display: grid;
 grid-template-columns: repeat(2, minmax(0, 1fr));
 gap: 1rem;
 }
+
 .three_columns {
 display: grid;
 grid-template-columns: repeat(3, minmax(0, 1fr));
 gap: 1rem;
 }
+
 section::after {
 content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
+
 section.coverpage {
 background-image: url('./images/ANU_logo.png');
 background-repeat: no-repeat;
-background-size: 20%;
+background-size: 30%;
 background-position: right 10px bottom 10px;
 }
-.quote {
-  display: flex;
-  align-items: center;
-  font: 32px italic Times, serif;
-  padding: 2px;
-  background-color: #faebbc;
-  border-top: 1px solid #e1cc89;
-  border-bottom: 1px solid #e1cc89;
-  margin: 10px;
-  text-indent: 23px;
-}
-.quote p, .quote cite {
-  margin: 0;
-}
-.quote cite {
-  font-size: 0.8em;
-  margin: 0;
-}
-.quote img{
-margin-right: 10px;
-object-fit: cover;
-width: 50px;}
+
 
 

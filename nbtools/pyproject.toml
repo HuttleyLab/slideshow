@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nbtools"
+authors = [{name="richard morris"}]
+version = "0.1.0"
+description = "Extracts tagged Jupyter Notebook cells and renders them as images"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "graphviz",
+    "nbconvert",
+    "nbformat",
+    "nest_asyncio",
+    "playwright",
+    "pytest",
+    "uuid",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+nbtools = "nbtools.renderer:export_cells"
