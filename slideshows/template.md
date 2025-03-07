@@ -1,41 +1,31 @@
 ---
 marp: true
 author: First Last
-title: Some title
+title: Project title
 math: katex
 size: 16:9
 headingDivider: 1
-theme: Default  
+style: |
+  h1 { /* Slide title */
+    position: absolute; top: 20px; left: 20px; right: 75px; }
+  section::after{ /* slide # */
+    content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);}
+  section{ /* slide class */
+      background-color: #ffffff; font-size: 2em; padding: 1rem; font-family:'Segoe UI';}
+  .bottom_align_contents{
+      display:flex; align-items:flex-end}
+  .two_columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+  .three_columns {display: grid;grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
 ---
-## Cover slide
+# Project title  
 <!-- paginate: skip -->
-<style>
-  section::after 
-    {
-      content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
-    }
-  section 
-  {  /* Each slide is a section class */
-    background-color: #ffffff;
-    font-size: 2em;
-    padding: 1rem; /* Optional: Add padding for better spacing */
-    font-family:'Segoe UI';
-  }
-</style>
 
 ![](images/debruijngraph.drawio.svg)
 - Student: First Last
 - Huttley lab, Australian National University
 - Supervisors: Gavin Huttley 
 
-<style scoped>
-  {
-background-image: url('./images/ANU_logo.png');
-background-repeat: no-repeat;
-background-size: 30%;
-background-position: right 10px bottom 10px;
-}
-</style>
+<style scoped> /*ANU logo*/ { background-image: url('./images/ANU_logo.png');background-repeat: no-repeat; background-size: 30%;background-position: right 10px bottom 10px;} </style>
 
 # First slide
 <!-- paginate: true -->
@@ -79,7 +69,7 @@ background-position: right 10px bottom 10px;
 # Python code
 
 
-<div>
+<div> <!-- use div to turn off markdown code guard -->
 ```python</br>
 def hello_world():</br>
 &nbsp;&nbsp;&nbsp;&nbsp;print("Hello World")</br>
@@ -103,7 +93,6 @@ graph LR
   s-->CAC-->ACA-->CAG-->AGC-->GCA-->CAT-->e
   CAC-->ACG-->CGA-->GAG-->AGC
 </div>
-
 ```
 
 <div class="mermaid">
@@ -136,13 +125,6 @@ $$
 
 # 2 column layout
 
-<style>
-  .two_columns {
-display: grid;
-grid-template-columns: repeat(2, minmax(0, 1fr));
-gap: 1rem;
-}
-</style>
 <div class="two_columns">
   <div>
 
@@ -171,9 +153,25 @@ gap: 1rem;
 |*Seqence A* | C | A | T | A | C | A | G | T | A | C | **G** | T | A | G | C | A | T |
 |*Seqence B* | C | A | T | A | C | A | G | T | A | C | **T** | T | A | G | C | A | T |
 
+# 3 column layout
+<div class="three_columns">
+  <div>
+  
+  ### Column one
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+  <div style="background-color: #f0f0f0;">
+  
+  ### Column two
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+  <div>
 
+  ### Column three
 
-<!-- _footer: "[nedbatchelder.com](https://nedbatchelder.com/blog/201310/big_o_log_n.html)"-->
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+</div>
 
 # Citations
 
