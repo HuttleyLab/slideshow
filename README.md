@@ -1,13 +1,15 @@
 # Slideshow
 A template for a markdown slideshow in VS code for academic presentations.  
 
+See the markdown file in `./slideshows/template.md` for an example of a markdown slideshow.
+
 Note this looks best using light themes in VS code.  
 
 # Extensions
 
 You'll need to install the following extensions in VS code to be able to use all the features of this template.
 
-## Markdown based slide shows
+## Markdown based slide shows (MARP)
 
 [MARP for VS Code ](vscode:extension/marp-team.marp-vscode)
 
@@ -67,4 +69,8 @@ The HTML slideshow will include a presenter feature that you can use with two mo
 
 The PDF slideshow will include the notes and the slides.
 
-The PPTX slideshow will run in power point but it will render the slides as images so it won't really be easily editable. 
+The PPTX slideshow will run in power point but it will render the slides as images so it won't really be easily editable.
+
+# Issues and Questions
+
+If you have any issues or questions please raise them in the issues tab of this repo and assign them to @khiron.
