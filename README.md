@@ -58,3 +58,13 @@ nbtools.export_cell_to_img('notebook.ipynb', './images')
 
 ## Example
 ![](./slideshows/images/construct_chart_Cell3.png)
+
+# Slideshow features
+
+You can export the slideshow to .HTML, .PDF, or .PPTX format.  
+
+The HTML slideshow will include a presenter feature that you can use with two monitors to see the next slide and notes on a presenter monitor and the full screen presentation on a different monitor.
+
+The PDF slideshow will include the notes and the slides.
+
+The PPTX slideshow will run in power point but it will render the slides as images so it won't really be easily editable. 
